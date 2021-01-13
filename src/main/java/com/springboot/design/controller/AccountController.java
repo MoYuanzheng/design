@@ -1,7 +1,7 @@
 package com.springboot.design.controller;
 
 import com.springboot.design.bean.Account;
-import com.springboot.design.service.AccountService;
+import com.springboot.design.service.impl.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

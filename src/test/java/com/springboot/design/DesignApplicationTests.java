@@ -19,7 +19,7 @@ class DesignApplicationTests {
     @Test
     void contextLoads() {
 //        jdbcTemplate.queryForObject("select * form user",)
-        Long aLong = jdbcTemplate.queryForObject("select count(*) from user", Long.class);
+        Long aLong = jdbcTemplate.queryForObject("select count(*) from info", Long.class);
         System.out.println("记录总数" + aLong);
 
         System.out.println("数据源类型" + dataSource.getClass());

@@ -65,7 +65,7 @@ public class LoginController {
     @ResponseBody
     @GetMapping("/sql")
     public String queryFromDb(){
-        Long aLong = jdbcTemplate.queryForObject("select count(*) from user", Long.class);
+        Long aLong = jdbcTemplate.queryForObject("select count(*) from info", Long.class);
         return aLong.toString();
     }
 }
