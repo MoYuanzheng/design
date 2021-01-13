@@ -1,7 +1,7 @@
 package com.springboot.design.controller;
 
 import com.springboot.design.bean.Account;
-import com.springboot.design.service.impl.AccountService;
+import com.springboot.design.service.impl.AccountServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class AccountController {
 
     @Autowired
-    AccountService accountService;
+    AccountServiceImpl accountService;
 
     @ResponseBody
     @GetMapping("/getByUid")
-    public Account getByUid(@RequestParam("uid") Integer uid){
+    public Account getByUid(@RequestParam("uid") Integer uid) {
         return accountService.geAccByUid(uid);
     }
 }

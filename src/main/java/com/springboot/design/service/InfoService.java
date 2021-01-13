@@ -1,8 +1,6 @@
 package com.springboot.design.service;
 
-import org.springframework.stereotype.Service;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.springboot.design.bean.Info;
 
-@Service
-public interface InfoService {
-
-}
+public interface InfoService extends IService<Info> { }

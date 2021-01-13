@@ -21,9 +21,9 @@ public class DesignApplication {
 //            System.out.println(name);
 //        }
 
-        User user = run.getBean("user01",User.class);
-        System.out.println(user.getPet().getName());
-        Pet tom = run.getBean("tom", Pet.class);
+//        User user = run.getBean("user01",User.class);
+//        System.out.println(user.getPet().getName());
+//        Pet tom = run.getBean("tom", Pet.class);
 //        System.out.println(tom);
 //        System.out.println("相等吗：" + (user.getPet() == tom));
     }
