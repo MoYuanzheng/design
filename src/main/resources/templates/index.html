@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎</title>
+</head>
+<body>
+<h1>欢迎么么哒</h1>
+<p>--------------------------------------------------------------</p>
+<form action="/user" method="get">
+    <input type="submit" VALUE="get-获取">
+</form>
+<form action="/user" method="post">
+    <input type="text" name="name" value="mo">
+    <input type="text" name="age" value="18">
+    <input type="submit" VALUE="POST-获取">
+</form>
+<form action="/user" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <input type="submit" VALUE="PUT-修改">
+</form>
+<form action="/user" method="post">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" VALUE="DEL-删除">
+</form>
+
+<form action="/file" method="post" enctype="multipart/form-data">
+    头像：<input type="file" name="headerImg">
+    组1：<input type="file" name="photos">
+    组2：<input type="file" name="photos">
+    账户：<input type="text" name="username" value="admin">
+    年龄：<input type="password" name="password" value="admin">
+    <input type="submit">
+</form>
+</body>
+</html>
