@@ -2,8 +2,9 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="AccountMapper">
-  <select id="selectBlog" resultType="Blog">
-    select * from Blog where id = #{id}
+<mapper namespace="com.springboot.design.mapper.AccountMapper">
+<!--public Account getUid(Integer uid);-->
+  <select id="getUid" resultType="com.springboot.design.bean.Account" >
+        select * from Account where uid = #{uid}
   </select>
 </mapper>
